@@ -1,0 +1,133 @@
+
+        * {
+        margin: 0px;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+       
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+        border: 1px solid black;
+    }
+
+    header {
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: black;
+        height: 7vh;
+        align-items: center;
+        border-bottom: 1px solid gray;
+        
+    }
+
+    .nav-links {
+        display: flex;
+        width: 35vw;
+        justify-content: space-between;
+        
+        margin-top: 8px;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: gray;
+        
+    }
+
+    .nav-link:hover {
+        text-decoration: none;
+        color: rgb(244, 98, 98);
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+     .logo {
+        color: rgb(244, 98, 98);
+     }
+
+     .intro {
+        background-color: black;
+        height: 40vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 17vw;
+     }
+
+     .intro-text {
+        display: flex;
+        height: 20vh;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50vw;
+
+     }
+
+     h1 {
+        color: rgb(228, 223, 223);
+        font-size: 40px;
+        font-weight: 350;
+     }
+
+
+     #my-name  {
+        color: rgb(228, 73, 73);
+     }
+
+     .my-heading {
+        color: gray;
+        font-weight: 400;
+     }
+
+     .my-bio {
+        color: rgb(228, 223, 223);
+        font-size: 20px;
+        font-weight: 200;
+     }
+
+     .btn-shape {
+        height: 40px;
+        padding: 0 10px;
+        border-radius: 8px;
+        font-size: 15px;
+     }
+
+     .btn-orange {
+        background-color: rgb(227, 110, 80);
+        color: aliceblue;
+     }
+
+     .btn-hollow {
+        background-color: black;
+        color: aliceblue;
+        border: 1px solid rgb(213, 213, 213);
+
+     }
+
+     .btn-orange:hover {
+        background-color: rgb(255, 157, 72);
+     }
+
+     .btn-hollow:hover {
+        color: coral;
+        background-color: rgb(29, 29, 29);
+        border-color: white;
+     }
+
+     .my-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 50%;
+        border: 5px solid rgb(247, 97, 56);
+     }
+   
