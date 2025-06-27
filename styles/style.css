@@ -129,5 +129,7 @@
         object-position: top;
         border-radius: 50%;
         border: 5px solid rgb(247, 97, 56);
+        box-shadow: rgb(26, 172, 26) 0, .7, .2 .5
+        ;
      }
    
