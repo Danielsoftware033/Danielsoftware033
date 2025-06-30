@@ -1,18 +1,17 @@
 
         * {
-        margin: 0px;
+        margin: 0;
         padding: 0;
         font-family: "Roboto", sans-serif;
         font-optical-sizing: auto;
-       
+        font-weight: 600;
         font-style: normal;
-        font-variation-settings:
-        "wdth" 100;
-        border: 1px solid black;
+        font-variation-settings: "wdth" 100;  
     }
 
     header {
-
+        padding: 0 17vw;
+        background: black;
     }
 
     nav {
@@ -50,24 +49,24 @@
     }
 
      .logo {
-        color: rgb(244, 98, 98);
+        color: rgb(45, 13, 185);
      }
 
      .intro {
         background-color: black;
-        height: 40vh;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        padding: 0 17vw;
+        padding: 2rem;       
      }
 
      .intro-text {
         display: flex;
-        height: 20vh;
+        
         flex-direction: column;
         justify-content: space-between;
         width: 50vw;
+        gap: 1rem;
 
      }
 
@@ -79,7 +78,7 @@
 
 
      #my-name  {
-        color: rgb(228, 73, 73);
+        color: rgb(60, 21, 230);
      }
 
      .my-heading {
@@ -89,7 +88,7 @@
 
      .my-bio {
         color: rgb(228, 223, 223);
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 200;
      }
 
@@ -101,7 +100,7 @@
      }
 
      .btn-orange {
-        background-color: rgb(227, 110, 80);
+        background-color: rgb(224, 103, 103);
         color: aliceblue;
      }
 
@@ -117,7 +116,7 @@
      }
 
      .btn-hollow:hover {
-        color: coral;
+        color: rgb(233, 115, 111);
         background-color: rgb(29, 29, 29);
         border-color: white;
      }
@@ -126,10 +125,220 @@
         width: 200px;
         height: 200px;
         object-fit: cover;
-        object-position: top;
+        object-position: center;
         border-radius: 50%;
-        border: 5px solid rgb(247, 97, 56);
+        border: 5px solid rgb(224, 103, 103);
         box-shadow: rgb(26, 172, 26) 0, .7, .2 .5
         ;
      }
    
+
+      /* ---Projects--- */
+      .project-box {
+        background-color: rgb(17, 17, 175);
+        color: white;
+        padding: 2rem;
+      }
+
+      .project-heading {
+        font-size: 35px;
+        font-weight: bold;
+        color: rgb(219, 111, 111);
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .project-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+
+      .project-card {
+        background-color: #1b1b80;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        text-align: center;
+
+        width: 25%; 
+        min-width: 250px; 
+        box-sizing: border-box;
+        margin: 0 40px;
+      }
+
+      .project-image {
+        width: 100%;
+        height: 300px;
+        object-fit: center;
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+      }
+
+
+
+      /* ---contact--- */
+      .contact-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        background-color: #111144;
+        color: white;
+        padding: 3rem;
+        flex-wrap: wrap;
+      }
+
+      .contact-info,
+      .contact-form {
+        width: 600px;
+      }
+
+      .contact-info {
+        text-align: center;
+        line-height: 1.7;
+      }
+
+      .footer-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #ffdddd;
+      }
+
+      .footer-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .footer-item {
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+      }
+
+      .footer-link {
+        color: #90c7ff;
+        text-decoration: none;
+      }
+
+      .footer-link:hover {
+        text-decoration: underline;
+      }
+
+      .footer-label {
+        display: block;
+        margin: 0.5rem 0 0.3rem;
+        font-weight: bold;
+      }
+
+      .footer-input,
+      .footer-textarea {
+        width: 100%;
+        padding: 0.3rem;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+      }
+
+      .footer-textarea {
+        height: 100px;
+        resize: vertical;
+      }
+
+      
+      /* ---Responsive--- */
+
+      @media (min-width: 768px) {
+        header {
+          padding: 0 8vw;
+        }
+
+        nav {
+          flex-wrap: nowrap;
+          padding: 1rem 0;
+        }
+
+        .nav-links {
+          width: auto;
+          gap: 2rem;
+        }
+
+        .intro {
+          flex-direction: row;
+          height: auto;
+          padding: 2rem 8vw;
+        }
+
+        .intro-text {
+          width: 60%;
+          height: auto;
+        }
+
+        .my-image {
+          width: 220px;
+          height: 220px;
+        }
+
+        .project-container {
+          justify-content: space-between;
+        }
+
+        .project-card {
+          width: 48%;
+          margin: 0;
+        }
+
+        .about-columns {
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 1.5rem;
+        }
+
+        .about-card {
+          flex: 1;
+          min-width: 280px;
+          max-width: 48%;
+        }
+
+        .contact-box {
+          flex-direction: row;
+        }
+
+        .contact-info,
+        .contact-form {
+          width: 48%;
+        }
+      }
+        @media (min-width: 1024px) {
+        header {
+          padding: 0 10vw;
+        }
+
+        nav {
+          height: auto;
+          gap: 2rem;
+        }
+
+        .intro {
+          justify-content: space-between;
+          padding: 3rem 10vw;
+        }
+
+        .intro-text {
+          max-width: 55%;
+        }
+
+        .my-image {
+          max-width: 250px;
+          height: 250px;
+        }
+
+        .project-card {
+          width: 30%;
+        }
+
+        .about-card {
+          max-width: 30%;
+        }
+      }
+    

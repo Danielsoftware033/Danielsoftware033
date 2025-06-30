@@ -4,44 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h2 class="logo">Daniel Ocampo</h2>
-            <ul class="nav-links">
-                <li>
-                    <a class="nav-link" href="./index.html">HOME</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="./about.html">ABOUT</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="">PROJECTS</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
+    <main>
+      
+      <section class="about-box">
+        <h2 class="about-header">About Me</h2>
 
-        <section class="intro">
-            <div class="intro-text">
-                <h1>Hello, I'm <span id="my-name">Daniel Ocampo</span></h1>
-                <h2 class="my-heading">Software Engineer & Web Developer</h2>
-                <p class="my-bio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. fdafafa oifdjaom.</p>
-                <div>
-                <button class="btn-shape btn-orange">View My Work</button>
-                <button class="btn-shape btn-hollow">Get In Touch</button>
-                </div>
-            </div>
-            <img class="my-image" src="https://picsum.photos/200/200" alt="">
-        </section>
-    </header>
+        <div class="about-columns">
+          
+          <div class="about-card about-summary">
+            <h3 class="about-title">Professional Summary</h3>
+            <p class="about-text">
+              Motivated and adaptable software engineer with hands-on 
+              experience in full-stack web development, including HTML, 
+              CSS, JavaScript, React, and Python. Graduate of Coding Temple
+               with a strong foundation in responsive design, API integration, 
+               and modern development tools. Passionate about building user-focused 
+               solutions and continuously learning new technologies.
+            </p>
+          </div>
+
+          
+          <div class="about-card about-skills">
+            <h3 class="about-title">Skills List</h3>
+            <h4 class="skills-subtitle">Frontend</h4>
+            <ul class= "about-list about-list-style">
+              <li class="about-item">HTML5</li>
+              <li class="about-item">CSS3</li>
+              <li class="about-item">JAVASCIPT</li>
+              <li class="about-item">REACT</li>
+              <li class="about-item">TYPESCRIPT</li>
+              <li class="about-item">BOOTSTRAP</li>
+              <li class="about-item">MUI</li>
+              <li class="about-item">TAILWIND</li>
+            </ul>
+          
+            <h4 class="skills-subtitle">Backend</h4>
+            <ul class="about-list about-list-style">
+                <li class="about-item">PYTHON</li>
+                <li class="about-item">FLASK</li>
+                <li class="about-item">SQL</li>
+                <li class="about-item">API-DEVELOPMENT</li>
+                <li class="about-item">FIREBASE</li>
+                <li class="about-item">FIRESTORE</li>
+            </ul>
+          </div>
+
+          <div class="about-card about-education" id="education-section">
+            <h3 class="about-title">Education</h3>
+            <ul class="about-list">
+              <li class="about-item">Coding Temple Software Engineering</li>
+              <li class="about-item">High School Diploma, Riverview High School</li>
+              <li class="about-item">Completed 60 College Credits, HCC-Tampa</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
 </body>
 </html>

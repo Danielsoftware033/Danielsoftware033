@@ -1,0 +1,101 @@
+      .about-box {
+        background-color: #0a0a5a;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .about-header {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: rgb(224, 103, 103);
+      }
+
+      .about-columns {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .about-card {
+        background-color: #1b1b80;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        text-align: left;
+      }
+
+      .about-title {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+        color: #ffdddd;
+        border-bottom: 1px solid #444;
+        padding-bottom: 0.5rem;
+      }
+
+      .skills-subtitle {
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #ffffff;
+        padding-bottom: 0.6rem;
+      }
+
+      .about-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #e0e0ff;
+      }
+
+      .about-list-style {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem 1.5rem;
+        padding-left: 0;
+        list-style: none;
+        margin: 0;
+      }
+
+      .about-item {
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 0.4rem 0.8rem;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        color: #e0e0ff;
+        position: relative;
+        padding-left: 1.5rem;
+      }
+
+      .about-item::before {
+        content: "✓";
+        color: #90ee90;
+        position: absolute;
+        left: 0.5rem;
+      }
+
+      .about-summary {
+        max-width: 300px;
+      }
+
+      .about-education .about-list {      
+        padding-left: 0;        
+        margin: 0;
+      }
+
+      .about-education .about-item::before {
+        content: none;
+      }
+
+      .about-education .about-item {
+      background-color: rgba(255, 255, 255, 0.05); 
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      margin-bottom: 0.6rem;
+      font-size: 1rem;
+      color: #e0e0ff;
+      box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
+      transition: background-color 0.3s ease;
+      }
